@@ -1,8 +1,7 @@
-//your JS code here. If required.
-        // Check if there are saved details in local storage
+  // Check if there are saved details in local storage
         if (localStorage.getItem('savedUsername') && localStorage.getItem('savedPassword')) {
             // Show button to login as existing user
-            document.body.innerHTML += '<button id="existing">Login as existing user</button>';
+            document.getElementById('existing').style.display = 'inline-block';
 
             // Handle click on the existing user button
             document.getElementById('existing').addEventListener('click', function () {
@@ -32,4 +31,3 @@
             // Show alert with the text "Logged in as <username>"
             alert('Logged in as ' + username);
         });
-    
